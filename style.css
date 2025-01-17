@@ -8,3 +8,24 @@ body{
     background: black;
     color: white;
 }
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    border: 1px solid white;
+}
+
+.logo{
+    width: 70px;
+}
+
+.nav-items > ul {
+    display: flex;
+}
+
+.nav-items > ul > li{
+    padding: 10px;
+    list-style-type: none;
+}
