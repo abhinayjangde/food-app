@@ -22,12 +22,51 @@ const Header = ()=>{
     )
 }
 
+// RestaurantCard
+const RestaurantCard = ()=>{
+    return (
+        <div className="res-card">
+            <img className="food-img" alt="pizza" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/FOOD_CATALOG/IMAGES/CMS/2024/12/18/35139b49-285b-4b15-ae85-94c910ff612c_69cb0003-937e-49d0-a21a-5b46ec2dd500.jpg_compressed" />
+            <h3>The Wood Fired Pizzeria</h3>
+            <h5>4.4 (695 ratings)</h5>
+            <h5>₹300 for two</h5>
+        </div>
+    )
+}
+// Body
+const Body = ()=>{
+    return (
+        <div className="body" >
+            <div className="search">Search Bar</div>
+            <div className="res-container" >
+                {/* TODO : Restaurant Cart   */}
+                <RestaurantCard/>
+                <RestaurantCard/>
+                <RestaurantCard/>
+                <RestaurantCard/>
+                <RestaurantCard/>
+                <RestaurantCard/>
+                <RestaurantCard/>
+                <RestaurantCard/>
+                <RestaurantCard/>
+                <RestaurantCard/>
+                <RestaurantCard/>
+                <RestaurantCard/>
+                <RestaurantCard/>
+                <RestaurantCard/>
+                <RestaurantCard/>
+                <RestaurantCard/>
+            </div>
+        </div>
+    )
+}
 // RootLayout
 const App = ()=>{
     return (
-        <div className="app">
+        <>
             <Header/>
-        </div>
+            <Body/>
+        </>
     )
 }
 

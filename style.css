@@ -29,3 +29,30 @@ body{
     padding: 10px;
     list-style-type: none;
 }
+
+.search { 
+    padding: 10px;
+}
+.res-card{
+    width: 230px;
+    height: 270px;
+    padding: 4px;
+    cursor: pointer;
+    border: 1px solid gray;
+}
+.res-card:hover{
+    border: 1px solid white;
+}
+
+.food-img{
+    width: 100%;
+}
+
+.res-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
