@@ -1,28 +1,4 @@
-import React, { useState } from "react"
-import ReactDOM from "react-dom/client"
-
-// const heading = React.createElement("h1", { id: "heading" }, "Hello from React Parcel")
-
-// Header Component
-const Header = () => {
-    return (
-        <div className="header">
-            <div className="logo-container">
-                <img className="logo" src="https://png.pngtree.com/png-vector/20220705/ourmid/pngtree-food-logo-png-image_5687686.png" />
-            </div>
-            <div className="nav-items" >
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                    <li>Cart</li>
-                </ul>
-            </div>
-        </div>
-    )
-}
-
-const foodList = [
+export const foodList = [
     {
         "strMeal": "Baingan Bharta",
         "strMealThumb": "https://www.themealdb.com/images/media/meals/urtpqw1487341253.jpg",
@@ -84,43 +60,3 @@ const foodList = [
         "idMeal": "52806"
     }
 ]
-// RestaurantCard
-const RestaurantCard = ({ foodList }) => {
-    console.log(foodList)
-    return (
-        <div className="res-card">
-            <img className="food-img" alt="pizza" src={foodList.strMealThumb} />
-            <h3>{foodList.strMeal}</h3>
-            <h5>{foodList.idMeal}</h5>
-        </div>
-    )
-}
-
-
-// Body
-const Body = () => {
-    return (
-        <div className="body" >
-            <div className="search">Search</div>
-            <div className="res-container" >
-                {
-                    foodList.map((item) => (
-                        <RestaurantCard key={item.idMeal} foodList={item} />
-                    ))
-                }
-            </div>
-        </div>
-    )
-}
-// RootLayout
-const App = () => {
-    return (
-        <>
-            <Header />
-            <Body />
-        </>
-    )
-}
-
-const root = ReactDOM.createRoot(document.getElementById("root"))
-root.render(<App />)
