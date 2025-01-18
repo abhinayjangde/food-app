@@ -35,7 +35,7 @@ body{
 }
 .res-card{
     width: 230px;
-    height: 270px;
+    height: 290px;
     padding: 4px;
     cursor: pointer;
     border: 1px solid gray;
@@ -55,4 +55,8 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+.filter{
+    margin: 10px 10px;
 }
